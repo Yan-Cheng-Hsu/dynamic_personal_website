@@ -1,0 +1,93 @@
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import styles from '@/styles/Landing.module.css'
+import Link from 'next/link'
+import Image from 'next/image'
+
+const roles = [
+  "Architected Cross-Cluster Infrastructure for 10,000+ GPUs 🚀",
+  "Saved $9M/year at Amazon AGI 💰",
+  "Reduced MTTR by 90% (10hr → 1hr) ⚡",
+  "Designed Federated Identity Mesh for K8s 🔐",
+  "25x Scaling for Unitree G1 Robot Training 🤖"
+]
+
+export default function HeroSection() {
+  const [currentRole, setCurrentRole] = useState(0)
+  const [isVisible, setIsVisible] = useState(true)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false)
+      setTimeout(() => {
+        setCurrentRole((prev) => (prev + 1) % roles.length)
+        setIsVisible(true)
+      }, 500)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  return (
+    <section className={styles.hero}>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className={styles.heroContent}
+      >
+        <div className={styles.availability}>
+          <span className={styles.statusDot}></span>
+          Available for Senior/Staff SDE | SRE | MLE Roles | GPU/AI Infrastructure Specialist
+        </div>
+
+        <h1 className={styles.heroTitle}>
+          Hi, I'm <span className={styles.highlight}>Bill Hsu</span>
+        </h1>
+
+        <div className={styles.roleContainer}>
+          <motion.p
+            className={styles.currentRole}
+            animate={{ opacity: isVisible ? 1 : 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            {roles[currentRole]}
+          </motion.p>
+        </div>
+
+        <p className={styles.heroSubtitle}>
+          Site Reliability Engineer II @ Alibaba Cloud | Ex-Amazon AGI
+          <br />
+          Building the infrastructure that powers next-gen AI
+        </p>
+
+        <div className={styles.heroCTA}>
+          <Link href="https://www.linkedin.com/in/yan-cheng-hsu/" className={styles.linkedinBtn} target="_blank">
+            <Image
+              src="/brands/linkedin.png"
+              alt="LinkedIn"
+              width={24}
+              height={24}
+              style={{ marginRight: '0.5rem' }}
+            />
+            Connect on LinkedIn
+          </Link>
+          <Link href="#schedule" className={styles.primaryBtn}>
+            📅 Schedule a Call
+          </Link>
+          <Link href="/cv_25Q4.pdf" className={styles.secondaryBtn} target="_blank">
+            📄 Download Resume
+          </Link>
+        </div>
+
+        <div className={styles.scrollIndicator}>
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 1.5 }}
+          >
+            ↓ See My Impact ↓
+          </motion.div>
+        </div>
+      </motion.div>
+    </section>
+  )
+}

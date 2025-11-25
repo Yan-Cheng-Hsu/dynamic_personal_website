@@ -2,16 +2,41 @@ import { Media,  MediaSource, MediaType, MediaState } from "react-chrono/dist/mo
 import { TimelineItemModel } from "react-chrono/dist/models/TimelineItemModel";
 export const timelineData: TimelineItemModel[] = [
   {
-    title: `Oct 2023`,
-    cardTitle: `Software Dev Engineer @Amazon | Artificial General Intelligence Org - Secure A.I. Foundations`,
-    cardSubtitle: `Olympus Models: Large Language/Visual Models (LLM/LVM) Tooling and Training Optimization on
-    Neurons`,
-    cardDetailedText:`Tech Stack: Cyber Security, Artificial General Intelligence (AGI), Distributed Training`,
+    title: `Jul 2025`,
+    cardTitle: `Site Reliability Engineer II @Alibaba Cloud | AnalyticDB Org - AI Training Platform`,
+    cardSubtitle: `Project Nexus: Cross-Cluster AI Training Infrastructure for Unitree G1-D Robot`,
+    cardDetailedText:`Tech Stack: Kubernetes, Virtual Kubelet, Terraform, Ray, DCGM, Prometheus, Grafana, eBPF, Golang`,
     url: `/work_exp`,
     media: {
         type: "IMAGE",
         source: {
-          url: `/pics/confidential.png`
+          url: `/alibaba_logo.svg`
+        }
+      }
+  },
+  {
+    title: `Dec 2024`,
+    cardTitle: `Co-Author on Amazon Nova Technical Report`,
+    cardSubtitle: `"The Amazon Nova family of models: Technical report and model card"`,
+    cardDetailedText:`Tech Stack: LLM/LVM Training, GPU Infrastructure, Distributed Systems`,
+    url: `/work_exp`,
+    media: {
+        type: "IMAGE",
+        source: {
+          url: `/pics/amazon_icon.png`
+        }
+      }
+  },
+  {
+    title: `Oct 2023`,
+    cardTitle: `Software Dev Engineer @Amazon | AGI Org - High Performance Computing`,
+    cardSubtitle: `Platform Leviathan: NVIDIA A100s/H100s Infrastructure for Amazon NOVA`,
+    cardDetailedText:`Tech Stack: AWS EKS, DynamoDB, EC2, GPU Optimization, Python, TypeScript`,
+    url: `/work_exp`,
+    media: {
+        type: "IMAGE",
+        source: {
+          url: `/pics/amazon_icon.png`
         }
       }
   }, 

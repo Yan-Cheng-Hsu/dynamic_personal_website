@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 module.exports = {
+  reactStrictMode: true,
   experimental: {
     esmExternals: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  images: {
+    unoptimized: false,
   },
 };
