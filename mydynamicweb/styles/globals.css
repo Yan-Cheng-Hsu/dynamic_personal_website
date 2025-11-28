@@ -11,10 +11,10 @@
   --background-end-rgb: 0, 0, 0;
 
   /* Text colors for dark theme (default) */
-  --text-primary: rgba(255, 255, 255, 1);
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --text-muted: rgba(255, 255, 255, 0.6);
-  --text-faint: rgba(255, 255, 255, 0.5);
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-muted: #999999;
+  --text-faint: #808080;
 
   /* Card and surface colors */
   --card-bg: rgba(255, 255, 255, 0.05);
@@ -48,17 +48,34 @@
   --card-border-rgb: 200, 200, 200;
 }
 
+/* System preference fallback - if user prefers light and no data-theme is set */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 245, 247, 250;
+    --background-end-rgb: 255, 255, 255;
+    --text-primary: #000000;
+    --text-secondary: #4d4d4d;
+    --text-muted: #666666;
+    --text-faint: #808080;
+    --card-bg: rgba(0, 0, 0, 0.03);
+    --card-bg-hover: rgba(0, 0, 0, 0.06);
+    --card-border: rgba(0, 0, 0, 0.1);
+    --surface-overlay: rgba(0, 0, 0, 0.05);
+  }
+}
+
 /* Light theme */
 [data-theme="light"] {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 245, 247, 250;
   --background-end-rgb: 255, 255, 255;
 
-  /* Text colors for light theme */
-  --text-primary: rgba(0, 0, 0, 1);
-  --text-secondary: rgba(0, 0, 0, 0.7);
-  --text-muted: rgba(0, 0, 0, 0.6);
-  --text-faint: rgba(0, 0, 0, 0.5);
+  /* Text colors for light theme - solid colors for better visibility */
+  --text-primary: #000000;
+  --text-secondary: #4d4d4d;
+  --text-muted: #666666;
+  --text-faint: #808080;
 
   /* Card and surface colors */
   --card-bg: rgba(0, 0, 0, 0.03);
@@ -104,10 +121,10 @@
   --background-end-rgb: 0, 0, 0;
 
   /* Text colors for dark theme */
-  --text-primary: rgba(255, 255, 255, 1);
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --text-muted: rgba(255, 255, 255, 0.6);
-  --text-faint: rgba(255, 255, 255, 0.5);
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  --text-muted: #999999;
+  --text-faint: #808080;
 
   /* Card and surface colors */
   --card-bg: rgba(255, 255, 255, 0.05);

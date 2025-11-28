@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find:*)",
+      "Bash(git -C /Users/yan-chenghsu/workplace/dynamic_personal_website log --oneline -20)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
