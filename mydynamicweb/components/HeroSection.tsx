@@ -40,6 +40,24 @@ export default function HeroSection() {
           Available for Senior/Staff SDE | SRE | MLE Roles | GPU/AI Infrastructure Specialist
         </div>
 
+        <div className={styles.heroProfile}>
+          <motion.div
+            className={styles.profileImageWrapper}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Image
+              src="/pics/resume_photo.jpg"
+              alt="Bill Hsu"
+              width={180}
+              height={180}
+              className={styles.profileImage}
+              priority
+            />
+          </motion.div>
+        </div>
+
         <h1 className={styles.heroTitle}>
           Hi, I'm <span className={styles.highlight}>Bill Hsu</span>
         </h1>

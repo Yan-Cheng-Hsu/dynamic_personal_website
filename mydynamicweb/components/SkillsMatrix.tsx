@@ -39,9 +39,9 @@ export default function SkillsMatrix() {
   })
 
   const getSkillColor = (level: number) => {
-    if (level >= 90) return '#00c853'
-    if (level >= 80) return '#0070f3'
-    if (level >= 70) return '#ff6f00'
+    if (level >= 90) return '#ff6b35'  // Orange
+    if (level >= 80) return '#f7c531'  // Yellow
+    if (level >= 70) return '#9b59b6'  // Purple
     return '#666'
   }
 

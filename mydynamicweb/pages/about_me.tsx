@@ -88,11 +88,11 @@ export default function AboutMe() {
             slideItemDuration={1500}
             slideShowType="reveal"
             theme={{
-              primary: '#0070f3',
+              primary: '#ff6b35',
               secondary: '#1a1a1a',
               cardBgColor: '#2a2a2a',
-              titleColor: '#0070f3',
-              titleColorActive: '#0070f3',
+              titleColor: '#ff6b35',
+              titleColorActive: '#ff6b35',
             }}
             mediaSettings={{
               align: 'right',

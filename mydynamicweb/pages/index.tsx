@@ -3,8 +3,7 @@ import Link from 'next/link'
 import styles from '@/styles/Landing.module.css'
 import homeStyles from '@/styles/Home.module.css'
 import HeroSection from '@/components/HeroSection'
-import BrandShowcase from '@/components/BrandShowcase'
-import MetricsDashboard from '@/components/MetricsDashboard'
+import ImpactSection from '@/components/ImpactSection'
 import ValueProposition from '@/components/ValueProposition'
 import SkillsMatrix from '@/components/SkillsMatrix'
 import LiveSystemStatus from '@/components/LiveSystemStatus'
@@ -46,13 +45,6 @@ export default function Index() {
       <nav className={homeStyles.navbar}>
         <div className={homeStyles.navContainer}>
           <Link href="/" className={homeStyles.navLogo}>
-            <Image
-              src="/pics/logo.png"
-              alt="Bill Hsu Logo"
-              width={40}
-              height={40}
-              priority
-            />
             <span>Bill Hsu</span>
           </Link>
 
@@ -66,8 +58,7 @@ export default function Index() {
 
       <main>
         <HeroSection />
-        <BrandShowcase />
-        <MetricsDashboard />
+        <ImpactSection />
         <ValueProposition />
         <SkillsMatrix />
         <LiveSystemStatus />

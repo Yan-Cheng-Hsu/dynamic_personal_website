@@ -9,28 +9,40 @@ const brands = [
     logo: '/brands/amazon-official.png',
     description: 'Saved $9M/year',
     color: '#FF9900',
-    isImage: true
+    isImage: true,
+    url: 'https://www.amazon.com'
   },
   {
     name: 'Alibaba Cloud',
     logo: '/brands/alibaba-official.png',
     description: 'Current - SRE II',
     color: '#FF6A00',
-    isImage: true
+    isImage: true,
+    url: 'https://www.alibabacloud.com'
   },
   {
     name: 'Amazon Nova',
-    logo: '/brands/amazon-official.png',
+    logo: '/brands/nova-official.png',
     description: 'Co-Author',
-    color: '#232F3E',
-    isImage: true
+    color: '#9B59B6',
+    isImage: true,
+    url: 'https://nova.amazon.com'
   },
   {
     name: 'Unitree Robotics',
-    logo: '/brands/unitree-official.png',
-    description: '25x Scaling',
-    color: '#0066CC',
-    isImage: true
+    logo: '/brands/unitree-text-logo.png',
+    description: '25x Scaling for G1-D',
+    color: '#333333',
+    isImage: true,
+    url: 'https://www.unitree.com/G1-D/'
+  },
+  {
+    name: 'UC San Diego',
+    logo: '/pics/ucsd_icon.png',
+    description: 'M.S. Computer Science',
+    color: '#00629B',
+    isImage: true,
+    url: 'https://ucsd.edu'
   }
 ]
 
@@ -47,16 +59,20 @@ export default function BrandShowcase() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         className={styles.brandContainer}
       >
-        <h3 className={styles.brandTitle}>Trusted by Industry Leaders</h3>
+        <h3 className={styles.brandTitle}>Where I've Made Impact</h3>
         <div className={styles.brandGrid}>
           {brands.map((brand, index) => (
-            <motion.div
+            <motion.a
               key={index}
+              href={brand.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className={styles.brandCard}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
+              style={{ textDecoration: 'none', color: 'inherit' }}
             >
               <div className={styles.brandLogo}>
                 {brand.isImage ? (
@@ -73,7 +89,7 @@ export default function BrandShowcase() {
               </div>
               <div className={styles.brandName}>{brand.name}</div>
               <div className={styles.brandDescription}>{brand.description}</div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </motion.div>
