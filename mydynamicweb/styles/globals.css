@@ -10,6 +10,18 @@
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
 
+  /* Text colors for dark theme (default) */
+  --text-primary: rgba(255, 255, 255, 1);
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-faint: rgba(255, 255, 255, 0.5);
+
+  /* Card and surface colors */
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-bg-hover: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --surface-overlay: rgba(0, 0, 0, 0.3);
+
   --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
   --secondary-glow: linear-gradient(
     to bottom right,
@@ -41,6 +53,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 245, 247, 250;
   --background-end-rgb: 255, 255, 255;
+
+  /* Text colors for light theme */
+  --text-primary: rgba(0, 0, 0, 1);
+  --text-secondary: rgba(0, 0, 0, 0.7);
+  --text-muted: rgba(0, 0, 0, 0.6);
+  --text-faint: rgba(0, 0, 0, 0.5);
+
+  /* Card and surface colors */
+  --card-bg: rgba(0, 0, 0, 0.03);
+  --card-bg-hover: rgba(0, 0, 0, 0.06);
+  --card-border: rgba(0, 0, 0, 0.1);
+  --surface-overlay: rgba(0, 0, 0, 0.05);
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -78,6 +102,18 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
+
+  /* Text colors for dark theme */
+  --text-primary: rgba(255, 255, 255, 1);
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-faint: rgba(255, 255, 255, 0.5);
+
+  /* Card and surface colors */
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-bg-hover: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --surface-overlay: rgba(0, 0, 0, 0.3);
 
   --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
   --secondary-glow: linear-gradient(

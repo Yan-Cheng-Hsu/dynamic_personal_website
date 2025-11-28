@@ -4,14 +4,18 @@ import styles from '@/styles/Landing.module.css'
 
 export default function ThemeToggle() {
   const [isDark, setIsDark] = useState(true)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
-    // Check for saved preference or system preference
+    setMounted(true)
+    // Check for saved preference, default to dark if none saved
     const saved = localStorage.getItem('theme')
     if (saved) {
       setIsDark(saved === 'dark')
     } else {
-      setIsDark(window.matchMedia('(prefers-color-scheme: dark)').matches)
+      // Default to dark mode
+      setIsDark(true)
+      localStorage.setItem('theme', 'dark')
     }
   }, [])
 

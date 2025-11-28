@@ -154,7 +154,7 @@
 
 .heroSubtitle {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -211,8 +211,8 @@
 .secondaryBtn {
   padding: 1rem 2rem;
   background: transparent;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: var(--text-primary);
+  border: 2px solid var(--card-border);
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
@@ -228,7 +228,7 @@
 
 .scrollIndicator {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-faint);
 }
 
 /* Section Styles */
@@ -241,7 +241,7 @@
 /* Metrics Section */
 .metricsSection {
   padding: 6rem 2rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--surface-overlay);
 }
 
 .metricsGrid {
@@ -253,7 +253,7 @@
 }
 
 .metricCard {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
@@ -272,7 +272,7 @@
 
 .metricLabel {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
 }
 
 /* Value Proposition */
@@ -289,7 +289,7 @@
 }
 
 .valueCard {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
   padding: 2rem;
   border-radius: 12px;
   border-left: 4px solid #ff6b35;
@@ -306,7 +306,7 @@
 }
 
 .valueCard p {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   margin-bottom: 1rem;
   line-height: 1.5;
 }
@@ -322,7 +322,7 @@
   padding-left: 1.5rem;
   position: relative;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-muted);
 }
 
 .valueDetails li::before {
@@ -335,7 +335,7 @@
 /* Skills Section */
 .skillsSection {
   padding: 6rem 2rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--surface-overlay);
 }
 
 .skillsGrid {
@@ -364,16 +364,16 @@
 }
 
 .skillName {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-primary);
 }
 
 .skillLevel {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-faint);
 }
 
 .skillBarBg {
   height: 6px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
   border-radius: 3px;
   overflow: hidden;
 }
@@ -419,7 +419,7 @@
 }
 
 .statusCard {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -429,7 +429,7 @@
   align-items: center;
   gap: 0.5rem;
   padding: 1rem 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--surface-overlay);
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -456,7 +456,7 @@
 
 .statusLabel {
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-faint);
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
@@ -485,13 +485,13 @@
 /* Testimonials */
 .testimonialsSection {
   padding: 6rem 2rem;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--surface-overlay);
 }
 
 .disclaimer {
   text-align: center;
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-faint);
   margin-bottom: 2rem;
 }
 
@@ -501,7 +501,7 @@
 }
 
 .testimonialCard {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--card-bg);
   padding: 3rem;
   border-radius: 12px;
   position: relative;
@@ -536,7 +536,7 @@
 
 .testimonialAuthor span {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-muted);
 }
 
 .testimonialCompany {
@@ -555,13 +555,13 @@
   height: 10px;
   border-radius: 50%;
   border: none;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--card-border);
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .dot:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--text-faint);
 }
 
 .activeDot {
@@ -606,7 +606,7 @@
 .scheduleInfo p {
   margin: 0.25rem 0;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
 }
 
 .scheduleForm {
@@ -618,10 +618,10 @@
 .scheduleForm input,
 .scheduleForm textarea {
   padding: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
   border-radius: 8px;
-  color: white;
+  color: var(--text-primary);
   font-size: 1rem;
 }
 
@@ -633,7 +633,7 @@
 
 .scheduleForm input::placeholder,
 .scheduleForm textarea::placeholder {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--text-faint);
 }
 
 .submitBtn {
@@ -656,7 +656,7 @@
 .alternativeSchedule {
   text-align: center;
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-faint);
 }
 
 .alternativeSchedule a {
@@ -665,9 +665,9 @@
 }
 
 .calendlyContainer {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--card-bg);
   border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--card-border);
   overflow: hidden;
 }
 
@@ -683,7 +683,7 @@
 
 .successMessage p {
   margin: 0.5rem 0;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
 }
 
 .successMessage .primaryBtn {
@@ -700,7 +700,7 @@
   height: 50px;
   border-radius: 50%;
   border: none;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--card-bg-hover);
   backdrop-filter: blur(10px);
   cursor: pointer;
   font-size: 1.5rem;
@@ -712,13 +712,13 @@
 }
 
 .themeToggle:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--card-border);
 }
 
 /* Impact Section - Combined Brand + Metrics */
 .impactSection {
   padding: 6rem 2rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--surface-overlay);
 }
 
 .impactContainer {
@@ -762,7 +762,7 @@
 
 .highlightLabel {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-muted);
 }
 
 .experienceGrid {
@@ -772,7 +772,7 @@
 }
 
 .experienceCard {
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--card-bg);
   border-radius: 12px;
   padding: 1.5rem;
   text-decoration: none;
@@ -782,7 +782,7 @@
 }
 
 .experienceCard:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--card-bg-hover);
   box-shadow: 0 10px 30px rgba(255, 107, 53, 0.1);
 }
 
@@ -817,7 +817,7 @@
   padding-left: 1.2rem;
   position: relative;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--text-secondary);
   line-height: 1.4;
 }
 
@@ -833,7 +833,7 @@
   align-items: baseline;
   gap: 0.5rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--card-border);
 }
 
 .metricNumber {
@@ -843,7 +843,7 @@
 
 .metricDesc {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-faint);
 }
 
 /* Mobile Responsive */
